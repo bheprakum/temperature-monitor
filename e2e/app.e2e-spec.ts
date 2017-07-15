@@ -7,8 +7,8 @@ describe('temperature-monitor App', function() {
     page = new TemperatureMonitorPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying temperature monitor', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Temperature Monitor');
   });
 });
