@@ -31,8 +31,9 @@ export class AppComponent {
     this.temperaturesMedian = null;
   }
   recordTemperature() {
-    if (+this.newTemperature || +this.newTemperature === 0) {
-      this.temperatures = this._temperatureMonitorService.recordTemperature(this.newTemperature);
+    let newTemperature = +this.newTemperature.trim()
+    if (newTemperature || newTemperature === 0) {
+      this.temperatures = this._temperatureMonitorService.recordTemperature(newTemperature);
       this.errorMsg = "";
     }
     else
