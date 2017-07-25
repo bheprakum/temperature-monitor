@@ -11,7 +11,7 @@ export class TemperatureMonitorService {
  
 
   recordTemperature(temperature){
-      this.temperatures.push(+temperature);
+      this.temperatures.push(temperature);
     return this.temperatures;
  }
 
